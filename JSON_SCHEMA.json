@@ -1,0 +1,505 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Storage Facts Aggregation Output",
+  "description": "Combined storage system facts from all VSP storage component fact modules",
+  "type": "object",
+  "properties": {
+    "audit_log_transfer_destinations": {
+      "type": "object",
+      "description": "Information about audit log file transfer destinations",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "clpr": {
+      "type": "object",
+      "description": "Cache Logical Partition (CLPR) information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "disk_drives": {
+      "type": "object",
+      "description": "Physical disk drive information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "disk_drive_id": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "external_parity_groups": {
+      "type": "object",
+      "description": "External storage parity group information",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "external_path_groups": {
+      "type": "object",
+      "description": "External storage path group information",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "external_volumes": {
+      "type": "object",
+      "description": "External storage volume information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "external_storage_serial": {
+                "type": "string"
+              },
+              "external_ldev_id": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "host_groups": {
+      "type": "object",
+      "description": "Host group/initiator group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "string"
+              },
+              "group_number": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "iscsi_remote_connections": {
+      "type": "object",
+      "description": "iSCSI remote connection information",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "iscsi_targets": {
+      "type": "object",
+      "description": "iSCSI target information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "iscsi_target_name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "journals": {
+      "type": "object",
+      "description": "Journal (copy-on-write) information",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "journal_volumes": {
+      "type": "object",
+      "description": "Journal volume information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "journal_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ldevs": {
+      "type": "object",
+      "description": "Logical device (LDEV) information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ldev_id": {
+                "type": "integer"
+              },
+              "capacity": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "microprocessors": {
+      "type": "object",
+      "description": "Microprocessor (MP) module information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mp_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "parity_groups": {
+      "type": "object",
+      "description": "RAID parity group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "parity_group_number": {
+                "type": "integer"
+              },
+              "disk_type": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "quorum_disks": {
+      "type": "object",
+      "description": "Quorum disk information for cluster management",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "remote_connections": {
+      "type": "object",
+      "description": "Remote replication connection information",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "resource_groups": {
+      "type": "object",
+      "description": "Resource group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "resource_group_id": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "server_priority_managers": {
+      "type": "object",
+      "description": "Server priority manager settings",
+      "properties": {
+        "data": {
+          "type": "array"
+        }
+      }
+    },
+    "shadow_image_groups": {
+      "type": "object",
+      "description": "Shadow image group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "shadow_image_group_number": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "shadow_image_pairs": {
+      "type": "object",
+      "description": "Shadow image pair replication information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "primary_volume_id": {
+                "type": "integer"
+              },
+              "secondary_volume_id": {
+                "type": "integer"
+              },
+              "replication_status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "snapshots": {
+      "type": "object",
+      "description": "Snapshot point-in-time copy information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "snapshot_id": {
+                "type": "string"
+              },
+              "source_volume_id": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "snapshot_groups": {
+      "type": "object",
+      "description": "Snapshot group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "snapshot_group_id": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "snmp_settings": {
+      "type": "object",
+      "description": "SNMP (Simple Network Management Protocol) configuration",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "snmp_version": {
+              "type": "string"
+            },
+            "snmp_community": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "storage_ports": {
+      "type": "object",
+      "description": "Storage system port information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "port_id": {
+                "type": "string"
+              },
+              "port_type": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "hardware_installed": {
+      "type": "object",
+      "description": "Installed hardware components",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "component_type": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "channel_boards": {
+      "type": "object",
+      "description": "Channel board information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "channel_board_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "storage_pools": {
+      "type": "object",
+      "description": "Thin provisioning storage pool information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pool_id": {
+                "type": "integer"
+              },
+              "pool_name": {
+                "type": "string"
+              },
+              "capacity": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "storage_system": {
+      "type": "object",
+      "description": "Overall storage system information",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "serial_number": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "firmware_version": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "type": "object",
+      "description": "Storage system user accounts",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "user_role": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "user_groups": {
+      "type": "object",
+      "description": "Storage system user group information",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "group_id": {
+                "type": "string"
+              },
+              "group_name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}

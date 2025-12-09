@@ -1,0 +1,31 @@
+---
+####################################################################
+# Playbook: Gather All Storage System Facts
+# Purpose: Uses the gather_storage_facts role to collect all facts
+#          from a VSP storage array and combine them into a JSON file
+####################################################################
+- name: Gather All Storage System Facts
+  hosts: localhost
+  gather_facts: false
+
+  vars_files:
+    - ansible_vault_vars/ansible_vault_storage_var.yml
+
+  vars:
+    # Common connection info for all tasks
+    connection_info:
+      address: "{{ storage_address }}"
+      username: "{{ vault_storage_username }}"
+      password: "{{ vault_storage_secret }}"
+
+    # Output configuration
+    facts_output_dir: "{{ playbook_dir }}/output"
+    facts_output_file: "{{ facts_output_dir }}/all_storage_facts.json"
+
+  roles:
+    - gather_storage_facts
+
+  post_tasks:
+    - name: Display completion message
+      debug:
+        msg: "Storage facts gathering completed. Results saved to {{ facts_output_file }}"

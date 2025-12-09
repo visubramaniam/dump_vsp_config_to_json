@@ -1,0 +1,452 @@
+---
+####################################################################
+# Ansible Role: gather_storage_facts
+# Purpose: Gather all storage system facts from VSP storage arrays
+# and aggregate them into a single JSON file
+####################################################################
+
+- name: Initialize facts dictionary
+  set_fact:
+    all_storage_facts: {}
+
+####################################################################
+# Audit Log Transfer Destinations Facts
+####################################################################
+- name: Get audit log transfer destinations
+  hitachivantara.vspone_block.vsp.hv_audit_log_transfer_dest_facts:
+    connection_info: "{{ connection_info }}"
+  register: audit_log_facts
+  ignore_errors: true
+
+- name: Add audit log facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'audit_log_transfer_destinations': audit_log_facts}) }}"
+  when: audit_log_facts is not failed
+
+####################################################################
+# CLPR Facts
+####################################################################
+- name: Get CLPR information
+  hitachivantara.vspone_block.vsp.hv_clpr_facts:
+    connection_info: "{{ connection_info }}"
+  register: clpr_facts
+  ignore_errors: true
+
+- name: Add CLPR facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'clpr': clpr_facts}) }}"
+  when: clpr_facts is not failed
+
+####################################################################
+# Disk Drive Facts
+####################################################################
+- name: Get disk drive information
+  hitachivantara.vspone_block.vsp.hv_disk_drive_facts:
+    connection_info: "{{ connection_info }}"
+  register: disk_drive_facts
+  ignore_errors: true
+
+- name: Add disk drive facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'disk_drives': disk_drive_facts}) }}"
+  when: disk_drive_facts is not failed
+
+####################################################################
+# External Parity Group Facts
+####################################################################
+- name: Get external parity groups
+  hitachivantara.vspone_block.vsp.hv_external_paritygroup_facts:
+    connection_info: "{{ connection_info }}"
+  register: external_paritygroup_facts
+  ignore_errors: true
+
+- name: Add external parity group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'external_parity_groups': external_paritygroup_facts}) }}"
+  when: external_paritygroup_facts is not failed
+
+####################################################################
+# External Path Group Facts
+####################################################################
+- name: Get external path groups
+  hitachivantara.vspone_block.vsp.hv_external_path_group_facts:
+    connection_info: "{{ connection_info }}"
+  register: external_path_group_facts
+  ignore_errors: true
+
+- name: Add external path group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'external_path_groups': external_path_group_facts}) }}"
+  when: external_path_group_facts is not failed
+
+####################################################################
+# External Volume Facts
+####################################################################
+- name: Get external volumes
+  hitachivantara.vspone_block.vsp.hv_external_volume_facts:
+    connection_info: "{{ connection_info }}"
+  register: external_volume_facts
+  ignore_errors: true
+
+- name: Add external volume facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'external_volumes': external_volume_facts}) }}"
+  when: external_volume_facts is not failed
+
+####################################################################
+# Host Group Facts
+####################################################################
+- name: Get host groups
+  hitachivantara.vspone_block.vsp.hv_hg_facts:
+    connection_info: "{{ connection_info }}"
+  register: hostgroup_facts
+  ignore_errors: true
+
+- name: Add host group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'host_groups': hostgroup_facts}) }}"
+  when: hostgroup_facts is not failed
+
+####################################################################
+# iSCSI Remote Connection Facts
+####################################################################
+- name: Get iSCSI remote connections
+  hitachivantara.vspone_block.vsp.hv_iscsi_remote_connection_facts:
+    connection_info: "{{ connection_info }}"
+  register: iscsi_remote_connection_facts
+  ignore_errors: true
+
+- name: Add iSCSI remote connection facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'iscsi_remote_connections': iscsi_remote_connection_facts}) }}"
+  when: iscsi_remote_connection_facts is not failed
+
+####################################################################
+# iSCSI Target Facts
+####################################################################
+- name: Get iSCSI targets
+  hitachivantara.vspone_block.vsp.hv_iscsi_target_facts:
+    connection_info: "{{ connection_info }}"
+  register: iscsi_target_facts
+  ignore_errors: true
+
+- name: Add iSCSI target facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'iscsi_targets': iscsi_target_facts}) }}"
+  when: iscsi_target_facts is not failed
+
+####################################################################
+# Journal Facts
+####################################################################
+- name: Get journals
+  hitachivantara.vspone_block.vsp.hv_journal_facts:
+    connection_info: "{{ connection_info }}"
+  register: journal_facts
+  ignore_errors: true
+
+- name: Add journal facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'journals': journal_facts}) }}"
+  when: journal_facts is not failed
+
+####################################################################
+# Journal Volume Facts
+####################################################################
+- name: Get journal volumes
+  hitachivantara.vspone_block.vsp.hv_journal_volume_facts:
+    connection_info: "{{ connection_info }}"
+  register: journal_volume_facts
+  ignore_errors: true
+
+- name: Add journal volume facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'journal_volumes': journal_volume_facts}) }}"
+  when: journal_volume_facts is not failed
+
+####################################################################
+# LDEV Facts
+####################################################################
+- name: Get logical devices (LDEVs)
+  hitachivantara.vspone_block.vsp.hv_ldev_facts:
+    connection_info: "{{ connection_info }}"
+  register: ldev_facts
+  ignore_errors: true
+
+- name: Add LDEV facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'ldevs': ldev_facts}) }}"
+  when: ldev_facts is not failed
+
+####################################################################
+# MP Facts
+####################################################################
+- name: Get microprocessor (MP) information
+  hitachivantara.vspone_block.vsp.hv_mp_facts:
+    connection_info: "{{ connection_info }}"
+  register: mp_facts
+  ignore_errors: true
+
+- name: Add MP facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'microprocessors': mp_facts}) }}"
+  when: mp_facts is not failed
+
+####################################################################
+# Parity Group Facts
+####################################################################
+- name: Get parity groups
+  hitachivantara.vspone_block.vsp.hv_paritygroup_facts:
+    connection_info: "{{ connection_info }}"
+  register: paritygroup_facts
+  ignore_errors: true
+
+- name: Add parity group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'parity_groups': paritygroup_facts}) }}"
+  when: paritygroup_facts is not failed
+
+####################################################################
+# Quorum Disk Facts
+####################################################################
+- name: Get quorum disks
+  hitachivantara.vspone_block.vsp.hv_quorum_disk_facts:
+    connection_info: "{{ connection_info }}"
+  register: quorum_disk_facts
+  ignore_errors: true
+
+- name: Add quorum disk facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'quorum_disks': quorum_disk_facts}) }}"
+  when: quorum_disk_facts is not failed
+
+####################################################################
+# Remote Connection Facts
+####################################################################
+- name: Get remote connections
+  hitachivantara.vspone_block.vsp.hv_remote_connection_facts:
+    connection_info: "{{ connection_info }}"
+  register: remote_connection_facts
+  ignore_errors: true
+
+- name: Add remote connection facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'remote_connections': remote_connection_facts}) }}"
+  when: remote_connection_facts is not failed
+
+####################################################################
+# Resource Group Facts
+####################################################################
+- name: Get resource groups
+  hitachivantara.vspone_block.vsp.hv_resource_group_facts:
+    connection_info: "{{ connection_info }}"
+  register: resource_group_facts
+  ignore_errors: true
+
+- name: Add resource group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'resource_groups': resource_group_facts}) }}"
+  when: resource_group_facts is not failed
+
+####################################################################
+# Server Priority Manager Facts
+####################################################################
+- name: Get server priority managers
+  hitachivantara.vspone_block.vsp.hv_server_priority_manager_facts:
+    connection_info: "{{ connection_info }}"
+  register: server_priority_manager_facts
+  ignore_errors: true
+
+- name: Add server priority manager facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'server_priority_managers': server_priority_manager_facts}) }}"
+  when: server_priority_manager_facts is not failed
+
+####################################################################
+# Shadow Image Group Facts
+####################################################################
+- name: Get shadow image groups
+  hitachivantara.vspone_block.vsp.hv_shadow_image_group_facts:
+    connection_info: "{{ connection_info }}"
+  register: shadow_image_group_facts
+  ignore_errors: true
+
+- name: Add shadow image group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'shadow_image_groups': shadow_image_group_facts}) }}"
+  when: shadow_image_group_facts is not failed
+
+####################################################################
+# Shadow Image Pair Facts
+####################################################################
+- name: Get shadow image pairs
+  hitachivantara.vspone_block.vsp.hv_shadow_image_pair_facts:
+    connection_info: "{{ connection_info }}"
+  register: shadow_image_pair_facts
+  ignore_errors: true
+
+- name: Add shadow image pair facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'shadow_image_pairs': shadow_image_pair_facts}) }}"
+  when: shadow_image_pair_facts is not failed
+
+####################################################################
+# Snapshot Facts
+####################################################################
+- name: Get snapshots
+  hitachivantara.vspone_block.vsp.hv_snapshot_facts:
+    connection_info: "{{ connection_info }}"
+  register: snapshot_facts
+  ignore_errors: true
+
+- name: Add snapshot facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'snapshots': snapshot_facts}) }}"
+  when: snapshot_facts is not failed
+
+####################################################################
+# Snapshot Group Facts
+####################################################################
+- name: Get snapshot groups
+  hitachivantara.vspone_block.vsp.hv_snapshot_group_facts:
+    connection_info: "{{ connection_info }}"
+  register: snapshot_group_facts
+  ignore_errors: true
+
+- name: Add snapshot group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'snapshot_groups': snapshot_group_facts}) }}"
+  when: snapshot_group_facts is not failed
+
+####################################################################
+# SNMP Settings Facts
+####################################################################
+- name: Get SNMP settings
+  hitachivantara.vspone_block.vsp.hv_snmp_settings_facts:
+    connection_info: "{{ connection_info }}"
+  register: snmp_settings_facts
+  ignore_errors: true
+
+- name: Add SNMP settings facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'snmp_settings': snmp_settings_facts}) }}"
+  when: snmp_settings_facts is not failed
+
+####################################################################
+# Storage Port Facts
+####################################################################
+- name: Get storage ports
+  hitachivantara.vspone_block.vsp.hv_storage_port_facts:
+    connection_info: "{{ connection_info }}"
+  register: storage_port_facts
+  ignore_errors: true
+
+- name: Add storage port facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'storage_ports': storage_port_facts}) }}"
+  when: storage_port_facts is not failed
+
+####################################################################
+# Storage System Monitor Facts
+####################################################################
+- name: Get hardware installed information
+  hitachivantara.vspone_block.vsp.hv_storage_system_monitor_facts:
+    connection_info: "{{ connection_info }}"
+    spec:
+      query: "hardware_installed"
+      include_component_option: false
+  register: hardware_monitor_facts
+  ignore_errors: true
+
+- name: Add hardware monitor facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'hardware_installed': hardware_monitor_facts}) }}"
+  when: hardware_monitor_facts is not failed
+
+- name: Get channel boards information
+  hitachivantara.vspone_block.vsp.hv_storage_system_monitor_facts:
+    connection_info: "{{ connection_info }}"
+    spec:
+      query: "channel_boards"
+  register: channel_boards_facts
+  ignore_errors: true
+
+- name: Add channel boards facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'channel_boards': channel_boards_facts}) }}"
+  when: channel_boards_facts is not failed
+
+####################################################################
+# Storage Pool Facts
+####################################################################
+- name: Get storage pools
+  hitachivantara.vspone_block.vsp.hv_storagepool_facts:
+    connection_info: "{{ connection_info }}"
+  register: storagepool_facts
+  ignore_errors: true
+
+- name: Add storage pool facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'storage_pools': storagepool_facts}) }}"
+  when: storagepool_facts is not failed
+
+####################################################################
+# Storage System Facts
+####################################################################
+- name: Get storage system information
+  hitachivantara.vspone_block.vsp.hv_storagesystem_facts:
+    connection_info: "{{ connection_info }}"
+  register: storagesystem_facts
+  ignore_errors: true
+
+- name: Add storage system facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'storage_system': storagesystem_facts}) }}"
+  when: storagesystem_facts is not failed
+
+####################################################################
+# User Facts
+####################################################################
+- name: Get user information
+  hitachivantara.vspone_block.vsp.hv_user_facts:
+    connection_info: "{{ connection_info }}"
+  register: user_facts
+  ignore_errors: true
+
+- name: Add user facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'users': user_facts}) }}"
+  when: user_facts is not failed
+
+####################################################################
+# User Group Facts
+####################################################################
+- name: Get user group information
+  hitachivantara.vspone_block.vsp.hv_user_group_facts:
+    connection_info: "{{ connection_info }}"
+  register: user_group_facts
+  ignore_errors: true
+
+- name: Add user group facts to aggregated dictionary
+  set_fact:
+    all_storage_facts: "{{ all_storage_facts | combine({'user_groups': user_group_facts}) }}"
+  when: user_group_facts is not failed
+
+####################################################################
+# Save aggregated facts to JSON file
+####################################################################
+- name: Create output directory
+  file:
+    path: "{{ facts_output_dir | default('/tmp') }}"
+    state: directory
+    mode: '0755'
+
+- name: Save all facts to JSON file
+  copy:
+    content: "{{ all_storage_facts | to_nice_json }}"
+    dest: "{{ facts_output_file | default('/tmp/all_storage_facts.json') }}"
+    mode: '0644'
+  register: json_file_result
+
+- name: Display JSON file location
+  debug:
+    msg: "All storage facts saved to: {{ facts_output_file | default('/tmp/all_storage_facts.json') }}"

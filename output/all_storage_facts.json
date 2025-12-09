@@ -1,0 +1,2424 @@
+{
+    "audit_log_transfer_destinations": {
+        "ansible_facts": {
+            "audit_log_transfer_dest_info": {
+                "is_detailed": true,
+                "location_name": "",
+                "primary_syslog_server": {
+                    "ip_address": "",
+                    "is_enabled": false,
+                    "port": -1
+                },
+                "retries": null,
+                "retry_interval": -1,
+                "secondary_syslog_server": {
+                    "ip_address": "",
+                    "is_enabled": false,
+                    "port": -1
+                },
+                "transfer_protocol": "UDP"
+            },
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "channel_boards": {
+        "ansible_facts": {
+            "channel_boards": [
+                {
+                    "cable_material": "-",
+                    "channel_board_id": 0,
+                    "channel_board_number": 0,
+                    "channel_board_type": "FIBRE",
+                    "cluster_number": 1,
+                    "location": "CHB-1A",
+                    "max_port_speed": "32G",
+                    "num_of_ports": "4Port",
+                    "storage_serial_number": "454972"
+                },
+                {
+                    "cable_material": "Optical",
+                    "channel_board_id": 1,
+                    "channel_board_number": 1,
+                    "channel_board_type": "ISCSI",
+                    "cluster_number": 1,
+                    "location": "CHB-1B",
+                    "max_port_speed": "10G",
+                    "num_of_ports": "2Port",
+                    "storage_serial_number": "454972"
+                },
+                {
+                    "cable_material": "-",
+                    "channel_board_id": 2,
+                    "channel_board_number": 0,
+                    "channel_board_type": "FIBRE",
+                    "cluster_number": 2,
+                    "location": "CHB-2A",
+                    "max_port_speed": "32G",
+                    "num_of_ports": "4Port",
+                    "storage_serial_number": "454972"
+                },
+                {
+                    "cable_material": "Optical",
+                    "channel_board_id": 3,
+                    "channel_board_number": 1,
+                    "channel_board_type": "ISCSI",
+                    "cluster_number": 2,
+                    "location": "CHB-2B",
+                    "max_port_speed": "10G",
+                    "num_of_ports": "2Port",
+                    "storage_serial_number": "454972"
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "clpr": {
+        "ansible_facts": {
+            "clprs": [
+                {
+                    "cache_memory_capacity_in_gb": 90.75,
+                    "cache_memory_capacity_in_mb": 92928,
+                    "cache_memory_used_capacity_in_gb": 0.044921875,
+                    "cache_memory_used_capacity_in_mb": 46,
+                    "cache_usage_rate": 1,
+                    "clpr_id": 0,
+                    "clpr_name": "CLPR0",
+                    "side_files_capacity_in_gb": 0.0,
+                    "side_files_capacity_in_mb": 0,
+                    "side_files_usage_rate": 0,
+                    "write_pending_data_capacity_in_gb": 0.0,
+                    "write_pending_data_capacity_in_mb": 0,
+                    "write_pending_data_rate": 0
+                }
+            ],
+            "msg": "CLPRs retrieved successfully",
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "disk_drives": {
+        "ansible_facts": {
+            "disk_drives": {
+                "data": [
+                    {
+                        "drive_location_id": "0-0",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702DEZ",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-1",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702DEU",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-2",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702CY4",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-3",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702CY3",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-4",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702DEX",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-5",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702CY0",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-6",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702CXY",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-7",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-2",
+                        "serial_number": "F3702CXX",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-8",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-1",
+                        "serial_number": "50V0A07X",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-9",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-1",
+                        "serial_number": "50V09M1X",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-10",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-1",
+                        "serial_number": "50V09T1X",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-11",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-1",
+                        "serial_number": "50V09PJX",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-12",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "parity_group_id": "1-1",
+                        "serial_number": "50V09WWX",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "DATA"
+                    },
+                    {
+                        "drive_location_id": "0-13",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "serial_number": "50V08PSX",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "SPARE"
+                    },
+                    {
+                        "drive_location_id": "0-14",
+                        "drive_type": "SLR5E-M7R6SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "serial_number": "50V09T7X",
+                        "status": "NML",
+                        "total_capacity": "7600 GB",
+                        "total_capacity_mb": 7782400.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-15",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR02R7R",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-16",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR020K8",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-17",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR020K2",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-18",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR02PWH",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-19",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR028LE",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-20",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR020G6",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-21",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR02WLD",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-22",
+                        "drive_type": "SLB5I-M1T9SS",
+                        "drive_type_name": "SSD(RI)",
+                        "serial_number": "ERR02XM1",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    },
+                    {
+                        "drive_location_id": "0-23",
+                        "drive_type": "SLB5J-M1R9SS",
+                        "drive_type_name": "SSD(MLC)",
+                        "serial_number": "F3702CY2",
+                        "status": "NML",
+                        "total_capacity": "1900 GB",
+                        "total_capacity_mb": 1945600.0,
+                        "usage_type": "FREE"
+                    }
+                ]
+            },
+            "msg": "Disk drives retrieved successfully.",
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "external_parity_groups": {
+        "ansible_facts": {
+            "external_parity_groups": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "external_path_groups": {
+        "ansible_facts": {
+            "external_path_groups": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "external_volumes": {
+        "ansible_facts": {
+            "external_volume": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "hardware_installed": {
+        "ansible_facts": {
+            "hardware_installed": {
+                "ctls": [
+                    {
+                        "charge": 100,
+                        "location": "CTL1",
+                        "status": "Normal",
+                        "temperature": 21,
+                        "temperature_status": "Normal",
+                        "type": "Encryption Controller Board"
+                    },
+                    {
+                        "charge": 100,
+                        "location": "CTL2",
+                        "status": "Normal",
+                        "temperature": 21,
+                        "temperature_status": "Normal",
+                        "type": "Encryption Controller Board"
+                    }
+                ],
+                "drive_boxes": [
+                    {
+                        "dbps": [],
+                        "drives": [
+                            {
+                                "location": "HDD00-00",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-01",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-02",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-03",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-04",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-05",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-06",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-07",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-08",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-09",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-10",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-11",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-12",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "DATA"
+                            },
+                            {
+                                "location": "HDD00-13",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Spare"
+                            },
+                            {
+                                "location": "HDD00-14",
+                                "model_code": "SLR5E-M7R6SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-15",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-16",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-17",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-18",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-19",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-20",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-21",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-22",
+                                "model_code": "SLB5I-M1T9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            },
+                            {
+                                "location": "HDD00-23",
+                                "model_code": "SLB5J-M1R9SS",
+                                "recomend_replacement": 0,
+                                "status": "Normal",
+                                "usage": "Free"
+                            }
+                        ],
+                        "encs": [],
+                        "led": "OFF",
+                        "location": "DB-00",
+                        "type": "DBS"
+                    }
+                ],
+                "storage_serial_number": "454972",
+                "system": {
+                    "power_consumption": 411
+                }
+            },
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "host_groups": {
+        "ansible_facts": {
+            "hostGroups": [
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "1A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL1-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "2A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL2-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "3A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL3-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "4A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL4-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "5A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL5-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "6A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL6-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "7A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL7-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                },
+                {
+                    "host_group_id": 0,
+                    "host_group_name": "8A-G00",
+                    "host_mode": "LINUX",
+                    "host_mode_options": [],
+                    "lun_paths": [],
+                    "port_id": "CL8-A",
+                    "resource_group_id": 0,
+                    "wwns": []
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "iscsi_remote_connections": {
+        "ansible_facts": {
+            "remote_connections": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "iscsi_targets": {
+        "ansible_facts": {
+            "iscsi_targets": [
+                {
+                    "auth_param": {
+                        "authentication_mode": "BOTH",
+                        "is_chap_enabled": true,
+                        "is_chap_required": false,
+                        "is_mutual_auth": false
+                    },
+                    "chap_users": [],
+                    "host_mode": {
+                        "host_mode": "LINUX",
+                        "host_mode_options": []
+                    },
+                    "iqn": "iqn.1994-04.jp.co.hitachi:rsd.h8s.t.54972.1b000",
+                    "iqn_initiators": [],
+                    "iscsi_id": 0,
+                    "iscsi_name": "1B-G00",
+                    "logical_units": [],
+                    "port_id": "CL1-B",
+                    "resource_group_id": 0
+                },
+                {
+                    "auth_param": {
+                        "authentication_mode": "BOTH",
+                        "is_chap_enabled": true,
+                        "is_chap_required": false,
+                        "is_mutual_auth": false
+                    },
+                    "chap_users": [],
+                    "host_mode": {
+                        "host_mode": "LINUX",
+                        "host_mode_options": []
+                    },
+                    "iqn": "iqn.1994-04.jp.co.hitachi:rsd.h8s.t.54972.2b000",
+                    "iqn_initiators": [],
+                    "iscsi_id": 0,
+                    "iscsi_name": "2B-G00",
+                    "logical_units": [],
+                    "port_id": "CL2-B",
+                    "resource_group_id": 0
+                },
+                {
+                    "auth_param": {
+                        "authentication_mode": "BOTH",
+                        "is_chap_enabled": true,
+                        "is_chap_required": false,
+                        "is_mutual_auth": false
+                    },
+                    "chap_users": [],
+                    "host_mode": {
+                        "host_mode": "LINUX",
+                        "host_mode_options": []
+                    },
+                    "iqn": "iqn.1994-04.jp.co.hitachi:rsd.h8s.t.54972.3b000",
+                    "iqn_initiators": [],
+                    "iscsi_id": 0,
+                    "iscsi_name": "3B-G00",
+                    "logical_units": [],
+                    "port_id": "CL3-B",
+                    "resource_group_id": 0
+                },
+                {
+                    "auth_param": {
+                        "authentication_mode": "BOTH",
+                        "is_chap_enabled": true,
+                        "is_chap_required": false,
+                        "is_mutual_auth": false
+                    },
+                    "chap_users": [],
+                    "host_mode": {
+                        "host_mode": "LINUX",
+                        "host_mode_options": []
+                    },
+                    "iqn": "iqn.1994-04.jp.co.hitachi:rsd.h8s.t.54972.4b000",
+                    "iqn_initiators": [],
+                    "iscsi_id": 0,
+                    "iscsi_name": "4B-G00",
+                    "logical_units": [],
+                    "port_id": "CL4-B",
+                    "resource_group_id": 0
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "journal_volumes": {
+        "ansible_facts": {
+            "journal_volume": null,
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook.",
+            "warning_deprecated_module": "The Ansible module hv_journal_volume_facts is deprecated and has been replaced by the new hv_journal_facts module. hv_journal_volume_facts will be removed in a future release. Please use the hv_journal_facts module instead."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "journals": {
+        "ansible_facts": {
+            "journal_volume": null,
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "ldevs": {
+        "ansible_facts": {
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook.",
+            "volumes": [
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00000000",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "DISABLED",
+                    "deduplication_compression_mode": "disabled",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": false,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 0,
+                    "ldev_id_hex": "00:00:00",
+                    "mp_blade_id": 0,
+                    "name": "RK-P-VOL-HTI",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "",
+                    "path_count": -1,
+                    "pool_id": 0,
+                    "provision_type": "CVS,HDP",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "256.00TB",
+                    "total_capacity_in_mb": 268435456.0,
+                    "used_capacity": "0.00B",
+                    "used_capacity_in_mb": 0,
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff2",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16370,
+                    "ldev_id_hex": "00:3F:F2",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16370_685b2934",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-2",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff3",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16371,
+                    "ldev_id_hex": "00:3F:F3",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16371_685b2934",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-2",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff4",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16372,
+                    "ldev_id_hex": "00:3F:F4",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16372_685b2934",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-2",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff5",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16373,
+                    "ldev_id_hex": "00:3F:F5",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16373_685b2934",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-2",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "1.32TB",
+                    "total_capacity_in_mb": 1384120.32,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff6",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16374,
+                    "ldev_id_hex": "00:3F:F6",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16374_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff7",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16375,
+                    "ldev_id_hex": "00:3F:F7",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16375_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff8",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16376,
+                    "ldev_id_hex": "00:3F:F8",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16376_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ff9",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16377,
+                    "ldev_id_hex": "00:3F:F9",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16377_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ffa",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16378,
+                    "ldev_id_hex": "00:3F:FA",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16378_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ffb",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16379,
+                    "ldev_id_hex": "00:3F:FB",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16379_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ffc",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16380,
+                    "ldev_id_hex": "00:3F:FC",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16380_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ffd",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16381,
+                    "ldev_id_hex": "00:3F:FD",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16381_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003ffe",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16382,
+                    "ldev_id_hex": "00:3F:FE",
+                    "mp_blade_id": 0,
+                    "name": "[AutoConfig]LDEV#16382_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "3.00TB",
+                    "total_capacity_in_mb": 3145728.0,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                },
+                {
+                    "canonical_name": "naa.60060e8012d6bc005040d6bc00003fff",
+                    "clpr_id": 0,
+                    "compression_acceleration_status": "",
+                    "data_reduction_process_mode": "",
+                    "dedup_compression_progress": -1,
+                    "dedup_compression_status": "",
+                    "deduplication_compression_mode": "",
+                    "emulation_type": "OPEN-V-CVS",
+                    "hostgroups": [],
+                    "is_alua": false,
+                    "is_command_device": null,
+                    "is_compression_acceleration_enabled": null,
+                    "is_data_reduction_share_enabled": null,
+                    "is_device_group_definition_enabled": null,
+                    "is_encryption_enabled": null,
+                    "is_full_allocation_enabled": null,
+                    "is_relocation_enabled": null,
+                    "is_security_enabled": null,
+                    "is_user_authentication_enabled": null,
+                    "is_write_protected": null,
+                    "is_write_protected_by_key": null,
+                    "iscsi_targets": [],
+                    "ldev_id": 16383,
+                    "ldev_id_hex": "00:3F:FF",
+                    "mp_blade_id": 1,
+                    "name": "[AutoConfig]LDEV#16383_685b289d",
+                    "num_of_ports": -1,
+                    "nvm_subsystems": [],
+                    "parity_group_id": "1-1",
+                    "path_count": -1,
+                    "pool_id": -1,
+                    "provision_type": "CVS,POOL",
+                    "qos_settings": null,
+                    "resource_group_id": 0,
+                    "snapshots": [],
+                    "status": "NML",
+                    "storage_serial_number": "454972",
+                    "tiering_policy": {},
+                    "total_capacity": "522.92GB",
+                    "total_capacity_in_mb": 535470.08,
+                    "used_capacity": "",
+                    "virtual_ldev_id": -1,
+                    "virtual_ldev_id_hex": ""
+                }
+            ]
+        },
+        "changed": false,
+        "failed": false
+    },
+    "microprocessors": {
+        "ansible_facts": {
+            "mp_blades": [
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 0,
+                    "mp_location_id": "MP10-00",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 1,
+                    "mp_location_id": "MP10-01",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 2,
+                    "mp_location_id": "MP10-02",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 3,
+                    "mp_location_id": "MP10-03",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 4,
+                    "mp_location_id": "MP10-04",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl1",
+                    "mp_id": 5,
+                    "mp_location_id": "MP10-05",
+                    "mp_unit_id": "MPU-10"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 8,
+                    "mp_location_id": "MP20-00",
+                    "mp_unit_id": "MPU-20"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 9,
+                    "mp_location_id": "MP20-01",
+                    "mp_unit_id": "MPU-20"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 10,
+                    "mp_location_id": "MP20-02",
+                    "mp_unit_id": "MPU-20"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 11,
+                    "mp_location_id": "MP20-03",
+                    "mp_unit_id": "MPU-20"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 12,
+                    "mp_location_id": "MP20-04",
+                    "mp_unit_id": "MPU-20"
+                },
+                {
+                    "cbx": -1,
+                    "ctl": "ctl2",
+                    "mp_id": 13,
+                    "mp_location_id": "MP20-05",
+                    "mp_unit_id": "MPU-20"
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "parity_groups": {
+        "ansible_facts": {
+            "parity_groups": [
+                {
+                    "clpr_id": 0,
+                    "copyback_mode": null,
+                    "drive_type": "SSD(MLC)",
+                    "free_capacity": "0",
+                    "free_capacity_mb": false,
+                    "is_accelerated_compression": false,
+                    "is_encryption_enabled": null,
+                    "is_pool_array_group": null,
+                    "ldev_ids": [
+                        16374,
+                        16375,
+                        16376,
+                        16377,
+                        16378,
+                        16379,
+                        16380,
+                        16381,
+                        16382,
+                        16383
+                    ],
+                    "parity_group_id": "1-1",
+                    "raid_level": "RAID5",
+                    "resource_group_id": -1,
+                    "total_capacity": "27.51TB",
+                    "total_capacity_mb": 28846325.76
+                },
+                {
+                    "clpr_id": 0,
+                    "copyback_mode": null,
+                    "drive_type": "SSD(MLC)",
+                    "free_capacity": "0",
+                    "free_capacity_mb": false,
+                    "is_accelerated_compression": false,
+                    "is_encryption_enabled": null,
+                    "is_pool_array_group": null,
+                    "ldev_ids": [
+                        16370,
+                        16371,
+                        16372,
+                        16373
+                    ],
+                    "parity_group_id": "1-2",
+                    "raid_level": "RAID6",
+                    "resource_group_id": -1,
+                    "total_capacity": "10.32TB",
+                    "total_capacity_mb": 10821304.32
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "quorum_disks": {
+        "ansible_facts": {
+            "quorum_disk": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "remote_connections": {
+        "ansible_facts": {
+            "remote_connections": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "resource_groups": {
+        "ansible_facts": {
+            "resource_groups": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "server_priority_managers": {
+        "ansible_facts": {
+            "server_priority_manager": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "shadow_image_groups": {
+        "ansible_facts": {
+            "msg": "Shadow Image Groups retrieved successfully",
+            "shadow_image_groups": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "shadow_image_pairs": {
+        "ansible_facts": {
+            "comment": "Couldn't read shadow image pairs. ",
+            "data": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "snapshot_groups": {
+        "ansible_facts": {
+            "snapshot_groups": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "snapshots": {
+        "ansible_facts": {
+            "snapshots": [],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "snmp_settings": {
+        "ansible_facts": {
+            "snmp_settings": {
+                "is_snmp_agent_enabled": true,
+                "request_authentication_setting": null,
+                "sending_trap_setting": {
+                    "snmpv1v2c_settings": [],
+                    "snmpv3_settings": [
+                        {
+                            "authentication": {
+                                "encryption": {
+                                    "key": "",
+                                    "protocol": "AES"
+                                },
+                                "password": "",
+                                "protocol": "SHA"
+                            },
+                            "send_trap_to": "192.168.52.150",
+                            "user_name": "HIDSNMPMGR"
+                        }
+                    ]
+                },
+                "snmp_engine_id": "0x800000740463333661386330",
+                "snmp_version": "v3",
+                "system_group_information": {
+                    "contact": "will.edds@hitachivantara.com",
+                    "location": "ACOE-DC3-Rack",
+                    "storage_system_name": "Infra-F350"
+                }
+            },
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "storage_pools": {
+        "ansible_facts": {
+            "storage_pool": [
+                {
+                    "available_physical_volume_capacity_mb": 28841946,
+                    "available_volume_capacity_mb": 28841946,
+                    "blocking_mode": "NB",
+                    "capacities_excluding_system_data": {
+                        "compressed_capacity": 0,
+                        "deduped_capacity": 0,
+                        "pre_compressed_capacity": 0,
+                        "pre_dedupred_capacity": 0,
+                        "pre_used_capacity": 0,
+                        "reclaimed_capacity": 0,
+                        "system_data_capacity": 0,
+                        "used_virtual_volume_capacity": 0
+                    },
+                    "compression_rate": 0,
+                    "dat": "",
+                    "data_reduction_accelerate_comp_capacity_mb": 0,
+                    "data_reduction_accelerate_comp_including_system_data": {
+                        "is_reduction_capacity_available": true,
+                        "is_reduction_rate_available": false,
+                        "reduction_capacity": 0,
+                        "reduction_rate": -1
+                    },
+                    "data_reduction_accelerate_comp_rate": 0,
+                    "data_reduction_before_capacity_mb": 0,
+                    "data_reduction_capacity_mb": 0,
+                    "data_reduction_including_system_data": {
+                        "is_reduction_capacity_available": true,
+                        "is_reduction_rate_available": false,
+                        "reduction_capacity": 0,
+                        "reduction_rate": -1
+                    },
+                    "data_reduction_rate": 0,
+                    "depletion_threshold": 80,
+                    "duplication_ldev_ids": [],
+                    "duplication_ldev_ids_hex": [],
+                    "duplication_number": 0,
+                    "duplication_rate": 0,
+                    "effective_capacity_mb": -1,
+                    "first_ldev_id": 16374,
+                    "has_blocked_pool_volume": null,
+                    "is_mainframe": false,
+                    "is_shrinking": false,
+                    "located_volume_count": 1,
+                    "monitoring_mode": "",
+                    "num_of_ldevs": 10,
+                    "pool_action_mode": "",
+                    "pool_id": 0,
+                    "pool_name": "Infra-F350-Main-Pool",
+                    "pool_status": "NORMAL",
+                    "pool_type": "HDP",
+                    "reserved_volume_count": 0,
+                    "snapshot_count": 0,
+                    "snapshot_used_capacity_mb": 0,
+                    "suspend_snapshot": true,
+                    "tier_operation_status": "",
+                    "tiers": [],
+                    "total_located_capacity_mb": 268449930,
+                    "total_physical_capacity_mb": 28841946,
+                    "total_pool_capacity_mb": 28841946,
+                    "total_reserved_capacity_mb": 0,
+                    "used_capacity_rate": 0,
+                    "used_physical_capacity": -1,
+                    "used_physical_capacity_rate": 0,
+                    "virtual_volume_capacity_rate": -1,
+                    "warning_threshold": 70
+                },
+                {
+                    "available_physical_volume_capacity_mb": 10813068,
+                    "available_volume_capacity_mb": 10813068,
+                    "blocking_mode": "NB",
+                    "capacities_excluding_system_data": {
+                        "compressed_capacity": 0,
+                        "deduped_capacity": 0,
+                        "pre_compressed_capacity": 0,
+                        "pre_dedupred_capacity": 0,
+                        "pre_used_capacity": 0,
+                        "reclaimed_capacity": 0,
+                        "system_data_capacity": 0,
+                        "used_virtual_volume_capacity": 0
+                    },
+                    "compression_rate": 0,
+                    "dat": "",
+                    "data_reduction_accelerate_comp_capacity_mb": 0,
+                    "data_reduction_accelerate_comp_including_system_data": {
+                        "is_reduction_capacity_available": true,
+                        "is_reduction_rate_available": false,
+                        "reduction_capacity": 0,
+                        "reduction_rate": -1
+                    },
+                    "data_reduction_accelerate_comp_rate": 0,
+                    "data_reduction_before_capacity_mb": 0,
+                    "data_reduction_capacity_mb": 0,
+                    "data_reduction_including_system_data": {
+                        "is_reduction_capacity_available": true,
+                        "is_reduction_rate_available": false,
+                        "reduction_capacity": 0,
+                        "reduction_rate": -1
+                    },
+                    "data_reduction_rate": 0,
+                    "depletion_threshold": 80,
+                    "duplication_ldev_ids": [],
+                    "duplication_ldev_ids_hex": [],
+                    "duplication_number": 0,
+                    "duplication_rate": 0,
+                    "effective_capacity_mb": -1,
+                    "first_ldev_id": 16370,
+                    "has_blocked_pool_volume": null,
+                    "is_mainframe": false,
+                    "is_shrinking": false,
+                    "located_volume_count": 0,
+                    "monitoring_mode": "",
+                    "num_of_ldevs": 4,
+                    "pool_action_mode": "",
+                    "pool_id": 1,
+                    "pool_name": "Backup-Pool",
+                    "pool_status": "NORMAL",
+                    "pool_type": "HDP",
+                    "reserved_volume_count": 0,
+                    "snapshot_count": 0,
+                    "snapshot_used_capacity_mb": 0,
+                    "suspend_snapshot": true,
+                    "tier_operation_status": "",
+                    "tiers": [],
+                    "total_located_capacity_mb": 0,
+                    "total_physical_capacity_mb": 10813068,
+                    "total_pool_capacity_mb": 10813068,
+                    "total_reserved_capacity_mb": 0,
+                    "used_capacity_rate": 0,
+                    "used_physical_capacity": -1,
+                    "used_physical_capacity_rate": 0,
+                    "virtual_volume_capacity_rate": -1,
+                    "warning_threshold": 70
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "storage_ports": {
+        "ansible_facts": {
+            "port_data": [
+                {
+                    "fabric_mode": true,
+                    "loop_id": "EF",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL1-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc00"
+                },
+                {
+                    "fabric_mode": false,
+                    "loop_id": "00",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "",
+                    "port_id": "CL1-B",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": true,
+                    "port_speed": "10G",
+                    "port_type": "ISCSI",
+                    "wwn": ""
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "B2",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL2-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc10"
+                },
+                {
+                    "fabric_mode": false,
+                    "loop_id": "00",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "",
+                    "port_id": "CL2-B",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": true,
+                    "port_speed": "10G",
+                    "port_type": "ISCSI",
+                    "wwn": ""
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "E8",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL3-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc20"
+                },
+                {
+                    "fabric_mode": false,
+                    "loop_id": "00",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "",
+                    "port_id": "CL3-B",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": true,
+                    "port_speed": "10G",
+                    "port_type": "ISCSI",
+                    "wwn": ""
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "B1",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL4-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc30"
+                },
+                {
+                    "fabric_mode": false,
+                    "loop_id": "00",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "",
+                    "port_id": "CL4-B",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": true,
+                    "port_speed": "10G",
+                    "port_type": "ISCSI",
+                    "wwn": ""
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "E4",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL5-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc40"
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "AE",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL6-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc50"
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "E2",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL7-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc60"
+                },
+                {
+                    "fabric_mode": true,
+                    "loop_id": "AD",
+                    "port_attributes": [
+                        "TAR",
+                        "MCU",
+                        "RCU",
+                        "ELUN"
+                    ],
+                    "port_connection": "PtoP",
+                    "port_id": "CL8-A",
+                    "port_mode": "NOT SUPPORTED",
+                    "port_security_setting": null,
+                    "port_speed": "AUT",
+                    "port_type": "FIBRE",
+                    "wwn": "50060e8012d6bc70"
+                }
+            ],
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "storage_system": {
+        "ansible_facts": {
+            "storage_system": {
+                "controller_address": "",
+                "device_limits": {
+                    "external_group_number_range": {
+                        "is_valid": false,
+                        "max_value": -1,
+                        "min_value": -1
+                    },
+                    "external_group_sub_number_range": {
+                        "is_valid": false,
+                        "max_value": -1,
+                        "min_value": -1
+                    },
+                    "parity_group_number_range": {
+                        "is_valid": false,
+                        "max_value": -1,
+                        "min_value": -1
+                    },
+                    "parity_group_sub_number_range": {
+                        "is_valid": false,
+                        "max_value": -1,
+                        "min_value": -1
+                    }
+                },
+                "free_capacity": "",
+                "free_capacity_in_mb": -1,
+                "free_gad_consistency_group_id": -1,
+                "free_local_clone_consistency_group_id": -1,
+                "free_remote_clone_consistency_group_id": -1,
+                "health_description": "",
+                "health_status": "",
+                "management_address": "",
+                "microcode_version": "88-08-17-20/00",
+                "model": "VSP F350",
+                "operational_status": "",
+                "resource_state": "",
+                "serial_number": "454972",
+                "syslog_config": {
+                    "detailed": true,
+                    "syslog_servers": []
+                },
+                "system_date_time": {
+                    "adjusts_daylight_saving_time": null,
+                    "is_ntp_enabled": false,
+                    "ntp_server_names": [],
+                    "synchronizing_local_time": "",
+                    "system_time": "2025-12-09T14:58:17Z",
+                    "time_zone_id": "Etc/GMT"
+                },
+                "time_zones_info": false,
+                "total_capacity": "",
+                "total_capacity_in_mb": -1,
+                "total_efficiency": {
+                    "accelerated_compression": {
+                        "compression_ratio": "-",
+                        "reclaim_ratio": "-",
+                        "total_ratio": "-"
+                    },
+                    "calculation_end_time": "2025-12-09T14:58:17Z",
+                    "calculation_start_time": "2025-12-09T14:58:06Z",
+                    "compression_ratio": "-",
+                    "dedupe_and_compression": {
+                        "compression_ratio": "-",
+                        "dedupe_ratio": "-",
+                        "reclaim_ratio": "-",
+                        "total_ratio": "-"
+                    },
+                    "is_calculated": true,
+                    "provisioning_rate": "100",
+                    "snapshot_ratio": "-",
+                    "total_ratio": "92233720368547758.07"
+                }
+            },
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook."
+        },
+        "changed": false,
+        "failed": false
+    },
+    "user_groups": {
+        "ansible_facts": {
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook.",
+            "user_groups": [
+                {
+                    "has_all_resource_group": true,
+                    "id": "Administrator%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Administrator User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View & Modify)",
+                        "Security Administrator (View & Modify)",
+                        "Storage Administrator (Initial Configuration)",
+                        "Storage Administrator (Local Copy)",
+                        "Storage Administrator (Performance Management)",
+                        "Storage Administrator (Provisioning)",
+                        "Storage Administrator (Remote Copy)",
+                        "Storage Administrator (System Resource Management)"
+                    ],
+                    "users": [
+                        "maintenance",
+                        "rkobzev",
+                        "thanson",
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Audit%20Log%20Administrator%20%28View%20%26%20Modify%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Audit Log Administrator (View & Modify) User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View & Modify)",
+                        "Storage Administrator (View Only)"
+                    ],
+                    "users": [
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Audit%20Log%20Administrator%20%28View%20Only%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Audit Log Administrator (View Only) User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View Only)",
+                        "Storage Administrator (View Only)"
+                    ],
+                    "users": []
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Maintenance%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Maintenance User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Storage Administrator (View Only)",
+                        "User Maintenance"
+                    ],
+                    "users": [
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Security%20Administrator%20%28View%20%26%20Modify%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Security Administrator (View & Modify) User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View & Modify)",
+                        "Security Administrator (View & Modify)",
+                        "Storage Administrator (View Only)"
+                    ],
+                    "users": [
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Security%20Administrator%20%28View%20Only%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Security Administrator (View Only) User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View Only)",
+                        "Security Administrator (View Only)",
+                        "Storage Administrator (View Only)"
+                    ],
+                    "users": []
+                },
+                {
+                    "has_all_resource_group": false,
+                    "id": "Storage%20Administrator%20%28View%20%26%20Modify%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Storage Administrator (View & Modify) User Group",
+                    "resource_group_ids": [
+                        0
+                    ],
+                    "role_names": [
+                        "Storage Administrator (Initial Configuration)",
+                        "Storage Administrator (Local Copy)",
+                        "Storage Administrator (Performance Management)",
+                        "Storage Administrator (Provisioning)",
+                        "Storage Administrator (Remote Copy)",
+                        "Storage Administrator (System Resource Management)"
+                    ],
+                    "users": [
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": false,
+                    "id": "Storage%20Administrator%20%28View%20Only%29%20User%20Group",
+                    "is_built_in": true,
+                    "name": "Storage Administrator (View Only) User Group",
+                    "resource_group_ids": [
+                        0
+                    ],
+                    "role_names": [
+                        "Storage Administrator (View Only)"
+                    ],
+                    "users": []
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "Support%20Personnel%20Group",
+                    "is_built_in": true,
+                    "name": "Support Personnel Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Storage Administrator (Initial Configuration)",
+                        "Storage Administrator (Local Copy)",
+                        "Storage Administrator (Performance Management)",
+                        "Storage Administrator (Provisioning)",
+                        "Storage Administrator (Remote Copy)",
+                        "Storage Administrator (System Resource Management)",
+                        "Support Personnel",
+                        "User Maintenance"
+                    ],
+                    "users": [
+                        "maintenance",
+                        "wedds"
+                    ]
+                },
+                {
+                    "has_all_resource_group": true,
+                    "id": "System%20User%20Group",
+                    "is_built_in": true,
+                    "name": "System User Group",
+                    "resource_group_ids": [
+                        "ALL"
+                    ],
+                    "role_names": [
+                        "Audit Log Administrator (View & Modify)",
+                        "Security Administrator (View & Modify)",
+                        "Storage Administrator (Initial Configuration)",
+                        "Storage Administrator (Local Copy)",
+                        "Storage Administrator (Performance Management)",
+                        "Storage Administrator (Provisioning)",
+                        "Storage Administrator (Remote Copy)",
+                        "Storage Administrator (System Resource Management)"
+                    ],
+                    "users": [
+                        "wedds"
+                    ]
+                }
+            ]
+        },
+        "changed": false,
+        "failed": false
+    },
+    "users": {
+        "ansible_facts": {
+            "user_consent_required": "Hitachi Vantara LLC collects usage data such as storage model, storage serial number, operation name, status (success or failure),and duration. This data is collected for product improvement purposes only. It remains confidential and it is not shared with any third parties. To provide your consent, run the accept_user_consent.yml playbook.",
+            "users": [
+                {
+                    "authentication": "local",
+                    "id": "maintenance",
+                    "is_account_status": true,
+                    "is_built_in": true,
+                    "name": "maintenance",
+                    "user_group_names": [
+                        "Administrator User Group",
+                        "Support Personnel Group"
+                    ]
+                },
+                {
+                    "authentication": "local",
+                    "id": "rkobzev",
+                    "is_account_status": true,
+                    "is_built_in": false,
+                    "name": "rkobzev",
+                    "user_group_names": [
+                        "Administrator User Group"
+                    ]
+                },
+                {
+                    "authentication": "local",
+                    "id": "thanson",
+                    "is_account_status": true,
+                    "is_built_in": false,
+                    "name": "thanson",
+                    "user_group_names": [
+                        "Administrator User Group"
+                    ]
+                },
+                {
+                    "authentication": "local",
+                    "id": "wedds",
+                    "is_account_status": true,
+                    "is_built_in": false,
+                    "name": "wedds",
+                    "user_group_names": [
+                        "Administrator User Group",
+                        "Audit Log Administrator (View & Modify) User Group",
+                        "Maintenance User Group",
+                        "Security Administrator (View & Modify) User Group",
+                        "Storage Administrator (View & Modify) User Group",
+                        "Support Personnel Group",
+                        "System User Group"
+                    ]
+                }
+            ]
+        },
+        "changed": false,
+        "failed": false
+    }
+}

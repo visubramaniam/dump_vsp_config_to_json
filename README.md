@@ -176,34 +176,34 @@ python3 process_facts.py -f all_storage_facts.json export storage_pools -o pools
 - ✓ Examples and guides included
 
 
-🤔 TROUBLESHOOTING
-═══════════════════════════════════════════════════════════════════════════════
+## 🤔 Troubleshooting
 
-Missing collection?
-  $ ansible-galaxy collection install hitachivantara.vspone_block
+### Missing collection?
+```bash
+ansible-galaxy collection install hitachivantara.vspone_block
+```
 
-Vault password issues?
-  Check: FACTS_AGGREGATOR_README.md -> Troubleshooting section
+### Vault password issues?
+Check: [FACTS_AGGREGATOR_README.md](FACTS_AGGREGATOR_README.md) → Troubleshooting section
 
-Connection timeout?
-  Verify: Storage IP, credentials, and network connectivity
+### Connection timeout?
+Verify: Storage IP, credentials, and network connectivity
 
-See FACTS_AGGREGATOR_README.md for more troubleshooting tips.
+**See [FACTS_AGGREGATOR_README.md](FACTS_AGGREGATOR_README.md) for more troubleshooting tips.**
 
 
-📞 NEXT STEPS
-═══════════════════════════════════════════════════════════════════════════════
+## 📞 Next Steps
 
-1. Read FILE_INDEX.md for file navigation
-2. Read SOLUTION_SUMMARY.md for overview
+1. Read [FILE_INDEX.md](FILE_INDEX.md) for file navigation
+2. Read [SOLUTION_SUMMARY.md](SOLUTION_SUMMARY.md) for overview
 3. Follow setup instructions above
 4. Run one of the quick start commands
-5. Use process_facts.py to explore output
+5. Use `process_facts.py` to explore output
 6. Integrate into your workflows
 
+---
 
-═══════════════════════════════════════════════════════════════════════════════
-For detailed help, see: FACTS_AGGREGATOR_README.md
-For file navigation, see: FILE_INDEX.md  
-For overview, see: SOLUTION_SUMMARY.md
-═══════════════════════════════════════════════════════════════════════════════
+**For detailed help, see:**
+- [FACTS_AGGREGATOR_README.md](FACTS_AGGREGATOR_README.md)
+- [FILE_INDEX.md](FILE_INDEX.md)
+- [SOLUTION_SUMMARY.md](SOLUTION_SUMMARY.md)

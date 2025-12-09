@@ -1,8 +1,7 @@
-╔════════════════════════════════════════════════════════════════════════╗
-║                    STORAGE FACTS AGGREGATOR SOLUTION                   ║
-║                                                                        ║
-║  Combine 31 Ansible playbooks into a single JSON file with all facts   ║
-╚════════════════════════════════════════════════════════════════════════╝
+
+STORAGE FACTS AGGREGATOR SOLUTION
+Combine 31 Ansible playbooks into a single JSON file with all facts
+
 
 📚 DOCUMENTATION
 ═══════════════════════════════════════════════════════════════════════════════
